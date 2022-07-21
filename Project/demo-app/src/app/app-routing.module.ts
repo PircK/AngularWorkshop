@@ -4,12 +4,14 @@ import { HomeComponent } from './components/home/home.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { TextComponent } from './components/text/text.component';
 import { TimeComponent } from './components/time/time.component';
+import { TestComponent } from './components/test/test.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'parent', component: ParentComponent },
   { path: 'text', component: TextComponent },
   { path: 'time', component: TimeComponent },
+  { path: 'test', component: TestComponent },
 ];
 
 @NgModule({

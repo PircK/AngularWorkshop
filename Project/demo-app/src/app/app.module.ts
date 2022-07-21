@@ -9,6 +9,7 @@ import { ParentComponent } from './components/parent/parent.component';
 import { TextComponent } from './components/text/text.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
+import { TestComponent } from './components/test/test.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {MatButtonModule} from '@angular/material/button';
     HomeComponent,
     TimeComponent,
     ParentComponent,
-    TextComponent
+    TextComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
