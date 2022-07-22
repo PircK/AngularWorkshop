@@ -8,8 +8,10 @@ import { TimeComponent } from './components/time/time.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { TextComponent } from './components/text/text.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { TestComponent } from './components/test/test.component';
+import { TextPipe } from './pipes/text.pipe';
+import { StarsPipe } from './pipes/stars.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { TestComponent } from './components/test/test.component';
     TimeComponent,
     ParentComponent,
     TextComponent,
-    TestComponent
+    TestComponent,
+    TextPipe,
+    StarsPipe
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,7 @@ import { TestComponent } from './components/test/test.component';
     BrowserAnimationsModule,
     MatButtonModule
   ],
-  providers: [],
+  providers: [TextPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
