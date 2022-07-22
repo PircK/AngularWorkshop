@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { TextPipe } from '../../pipes/text.pipe';
+import { StarsPipe } from '../../pipes/stars.pipe';
 
 @Component({
   selector: 'app-text',
@@ -13,7 +14,8 @@ export class TextComponent implements OnInit {
   constructor(
     private router: Router,
     private httpClient : HttpClient,
-    private textPipe : TextPipe
+    private textPipe : TextPipe,
+    private starsPipe: StarsPipe
   ) { }
 
   public text: string = "";
@@ -23,6 +25,8 @@ export class TextComponent implements OnInit {
       for (var entry of response['entries']) {
         this.text += ' ' + entry["Description"];
       }
+
+    this.text = this.starsPipe.transform(this.text)
     });
   }
 
