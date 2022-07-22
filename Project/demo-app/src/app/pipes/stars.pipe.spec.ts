@@ -1,8 +1,17 @@
 import { StarsPipe } from './stars.pipe';
 
 describe('StarsPipe', () => {
+
+  const pipe = new StarsPipe();
+  const input = 'API';
+  const expectedOutput = '***';
+
   it('create an instance', () => {
-    const pipe = new StarsPipe();
     expect(pipe).toBeTruthy();
   });
+
+  it("should replace 'API' with '***'", () => {
+    expect(pipe.transform(input)).toBe(expectedOutput);
+  });
+
 });

@@ -30,7 +30,7 @@ import { StarsPipe } from './pipes/stars.pipe';
     BrowserAnimationsModule,
     MatButtonModule
   ],
-  providers: [TextPipe],
+  providers: [TextPipe, StarsPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
