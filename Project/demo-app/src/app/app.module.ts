@@ -12,6 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { TestComponent } from './components/test/test.component';
 import { TextPipe } from './pipes/text.pipe';
 import { StarsPipe } from './pipes/stars.pipe';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
