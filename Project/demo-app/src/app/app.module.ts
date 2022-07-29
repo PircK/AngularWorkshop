@@ -12,6 +12,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import { TextProcessPipe } from './pipes/text-process.pipe';
 import { HeaderComponent } from './components/header/header.component';
+import { GameComponent } from './components/game/game.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HeaderComponent } from './components/header/header.component';
     ParentComponent,
     TextComponent,
     TextProcessPipe,
-    HeaderComponent
+    HeaderComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,
