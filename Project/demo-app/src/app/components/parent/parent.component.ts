@@ -12,4 +12,6 @@ export class ParentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public messageForHeader = "PARENT";
+
 }

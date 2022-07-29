@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import { TextProcessPipe } from './pipes/text-process.pipe';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TextProcessPipe } from './pipes/text-process.pipe';
     TimeComponent,
     ParentComponent,
     TextComponent,
-    TextProcessPipe
+    TextProcessPipe,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
